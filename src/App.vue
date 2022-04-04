@@ -25,7 +25,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/styles/style.scss";
 #app {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  // color: $confetti;
 }
 </style>
