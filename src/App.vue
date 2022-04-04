@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- Header con logo e nav -->
+    <classic-shop-header />
+    <!-- Main con le varie sotto-sezioni -->
+    <classic-shop-main />
+    <!-- Footer con link e pagamenti -->
+    <classic-shop-footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import classicShopHeader from "./components/classicShopHeader.vue";
+import classicShopMain from "./components/classicShopMain.vue";
+import classicShopFooter from "./components/classicShopFooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    classicShopHeader,
+    classicShopMain,
+    classicShopFooter,
+  },
+};
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 </style>
