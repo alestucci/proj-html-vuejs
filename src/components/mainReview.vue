@@ -3,7 +3,7 @@
     <div class="container">
       <img src="../assets/img/man_testimonial.png" alt="">
       <p>Curabitur non tristique tortor. Vestibulum aliquet suscipit ipsum in volutpat. Donec vel lacinia sem, vitae semper nulla. In hac habitasse platea dictumst. Mauris consectetur est et nibh sadip hendrerit bibendum.</p>
-      <h3>Darío Pineda, <span class="thin">Theme Fusion</span></h3>
+      <h4>Darío Pineda, <span class="thin">Theme Fusion</span></h4>
     </div>
   </div>
 </template>
