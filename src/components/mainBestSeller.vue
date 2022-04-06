@@ -51,8 +51,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/partials/variables";
 #best-seller {
+  margin: 5rem auto;
   text-align: center;
+}
+h1 {
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 200px;
+    margin: 0 2rem;
+    background-color: #f4f4f4;
+    vertical-align: middle;
+  }
+}
+h2 {
+  color: $nevada;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 1rem 0 3rem 0;
 }
 .slide-show {
   img {

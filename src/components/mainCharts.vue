@@ -179,11 +179,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/partials/variables";
 #charts {
   display: flex;
+  color: $nevada;
   .column {
     width: 25%;
   }
+}
+h3 {
+  text-transform: uppercase;
+  font-size: 14px;
 }
 .row {
   width: 100%;

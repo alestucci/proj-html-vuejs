@@ -17,6 +17,7 @@ export default {};
   width: 100%;
   height: 600px;
   background-image: url("../assets/img/testimonials_home_1_bg.jpg");
+  background-position: center;
   color: white;
 }
 .container {

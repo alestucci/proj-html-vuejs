@@ -1,13 +1,15 @@
 <template>
-  <div id="blog" class="container">
-    <h1>From Our Blog</h1>
-    <h2>The latest Classic Shop news</h2>
-    <div class="posts">
-      <div v-for="post in posts" :key="post.id" class="post" >
-        <img :src="getUrlImg(post.img)" alt="post.img" />
-        <h5>{{ post.title }}</h5>
-        <h6>{{ post.date }} | {{ post.comments }} Comments</h6>
-        <p>{{ post.text }}</p>
+  <div id="blog">
+    <div class="container">
+      <h1>From Our Blog</h1>
+      <h2>The latest Classic Shop news</h2>
+      <div class="posts">
+        <div v-for="post in posts" :key="post.id" class="post" >
+          <img :src="getUrlImg(post.img)" alt="post.img" />
+          <h5>{{ post.title }}</h5>
+          <h6>{{ post.date }} | {{ post.comments }} Comments</h6>
+          <p>{{ post.text }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -52,8 +54,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/partials/variables";
 #blog {
+  margin: 0 auto;
+  padding: 5rem 0;
   text-align: center;
+  border-bottom: 2px solid #f4f4f4;
+}
+h1 {
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 200px;
+    margin: 0 2rem;
+    background-color: #f4f4f4;
+    vertical-align: middle;
+  }
+}
+h2 {
+  color: $nevada;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 1rem 0 3rem 0;
 }
 .posts {
 	display: flex;
